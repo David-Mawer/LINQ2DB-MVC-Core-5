@@ -1,4 +1,4 @@
-# This is a .Net Core 2.2 Template for Linq2Db
+# This is a .Net Core 3.1 Template for Linq2Db
 
 This is the basic MVC template for **.Net Core 3.1** with a few tweaks: -
 
