@@ -47,6 +47,8 @@ namespace LINQ2DB_MVC_Core_3
             //  1. For Google, FaceBook and Microsoft... ...All the coding has been done for you.
             //  2. you need to set the ID and Secret for each button in appsettings.json
             //  3. You have to add a Nuget package for each external authentication that you want to configure.
+            //      to see these packges, use the NuGet Package manager, and search for the ones that start with: -
+            //      Microsoft.AspNetCore.Authentication.<<ProviderName>>
             //  4. If you're not sure how to get an ID or a secret - then look at the instructions at
             //      https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/?view=aspnetcore-3.1&tabs=visual-studio
             //      (select the type of account in the left menu frame, and then look for the part about setting up the app)
