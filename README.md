@@ -26,4 +26,4 @@ This is the basic MVC template for **.Net Core 3.1** with a few tweaks: -
  The project should now run (if the database connections are correctly set-up) .
  
  4. After confirming that the project runs, you can edit the T4 generation file `DB\LinqDB.tt` to point to the new database.
- 5. Now you can continue with the MVC project developing whatever you had in mind in the first place.
+ 5. Now you can continue with the Angular - API project developing whatever you had in mind in the first place (See Startup.cs and DemoController for tips on accessing the database).

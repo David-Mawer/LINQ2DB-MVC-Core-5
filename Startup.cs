@@ -31,6 +31,9 @@ namespace LINQ2DB_MVC_Core_3
             services.AddScoped<IUserStore<AspNetUsers>, AspNetUsersStore>();
             services.AddScoped<IRoleStore<AspNetRoles>, AspNetRolesStore>();
             services.AddScoped<IUserClaimsPrincipalFactory<AspNetUsers>, AspNetUsersClaimsPrincipalFactory>();
+            // Tip: To access you database, inject DataConnection into the constructor, and cast it as type LinqDB in your constructor.
+            //  to see this in action - look at DemoController.
+            services.AddScoped<DataConnection, LinqDB>();
             services.AddTransient<IdentityRole<string>, AspNetRoles>();
             services.AddTransient<IdentityUserClaim<string>, AspNetUserClaims>();
             services.AddTransient<IdentityUserRole<string>, AspNetUserRoles>();
