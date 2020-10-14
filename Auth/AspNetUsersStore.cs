@@ -22,6 +22,7 @@ namespace LINQ2DB_MVC_Core_3.Auth
         , IUserPhoneNumberStore<AspNetUsers>
         , IUserAuthenticatorKeyStore<AspNetUsers>
         , IUserTwoFactorStore<AspNetUsers>
+        , IUserLoginStore<AspNetUsers>
     {
         private bool _disposed = false;
         private DataConnection db;
@@ -548,6 +549,73 @@ namespace LINQ2DB_MVC_Core_3.Auth
             if (user == null)
                 throw new ArgumentNullException(nameof(user));
             return Task.FromResult(user.TwoFactorEnabled);
+        }
+
+        public async Task AddLoginAsync(AspNetUsers user, UserLoginInfo login, CancellationToken cancellationToken)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+            ThrowIfDisposed();
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+            if (login == null)
+            {
+                throw new ArgumentNullException(nameof(login));
+            }
+            
+            await db.InsertAsync(new AspNetUserLogins() { 
+                LoginProvider = login.LoginProvider,
+                ProviderDisplayName = login.ProviderDisplayName,
+                ProviderKey = login.ProviderKey,
+                User = user,
+                UserId = user.Id
+            });
+            return;
+        }
+
+        public async Task RemoveLoginAsync(AspNetUsers user, string loginProvider, string providerKey, CancellationToken cancellationToken)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+            ThrowIfDisposed();
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+            var entry = await db.GetTable<AspNetUserLogins>()
+                .FirstOrDefaultAsync(l => l.UserId == user.Id && l.LoginProvider == loginProvider && l.ProviderKey == providerKey, cancellationToken);
+            if (entry != null)
+            {
+                await db.DeleteAsync(entry);
+            }
+        }
+
+        public async Task<IList<UserLoginInfo>> GetLoginsAsync(AspNetUsers user, CancellationToken cancellationToken)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+            ThrowIfDisposed();
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+            var userId = user.Id;
+            return await db.GetTable<AspNetUserLogins>()
+                .Where(l => l.UserId.Equals(userId))
+                .Select(l => new UserLoginInfo(l.LoginProvider, l.ProviderKey, l.ProviderDisplayName))
+                .ToListAsync(cancellationToken);
+        }
+
+        public async Task<AspNetUsers> FindByLoginAsync(string loginProvider, string providerKey, CancellationToken cancellationToken)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+            ThrowIfDisposed();
+            var userLogin = await db.GetTable<AspNetUserLogins>()
+                .SingleOrDefaultAsync(userLogin => userLogin.LoginProvider == loginProvider && userLogin.ProviderKey == providerKey, cancellationToken);
+            if (userLogin != null)
+            {
+                return await db.GetTable<AspNetUsers>().SingleOrDefaultAsync(u => u.Id.Equals(userLogin.UserId), cancellationToken);
+            }
+            return null;
         }
     }
 
