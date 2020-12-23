@@ -1,6 +1,6 @@
-CREATE DATABASE [aspnet-LINQ2DB_MVC_Core_3]
+CREATE DATABASE [aspnet-LINQ2DB_MVC_Core_5]
 GO
-USE [aspnet-LINQ2DB_MVC_Core_3]
+USE [aspnet-LINQ2DB_MVC_Core_5]
 GO
 /****** Object:  Table [dbo].[AspNetRoleClaims]    Script Date: 2020/04/15 19:00:58 ******/
 SET ANSI_NULLS ON

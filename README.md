@@ -1,12 +1,12 @@
-# This is a .Net Core 3.1 Template for Linq2Db
+# This is a .Net Core 5.0 Template for Linq2Db
 
-This is the basic MVC template for **.Net Core 3.1** with a few tweaks: -
+This is the basic MVC template for **.Net Core 5.0** with a few tweaks: -
 
  - The ORM tool is **Linq2DB**
  - The Identity UI is **fully scaffolded**.
 	 - **Identity tables don't have the default names** - these can be changed.
 	 - Two-Factor Authentication works (**with the QR Code**).
-	 - To change the app name in the QR Code: - Edit EnableAuthenticator.cshtml.cs - change the line with **`_urlEncoder.Encode("LINQ2DB_MVC_Core_3")`**.
+	 - To change the app name in the QR Code: - Edit EnableAuthenticator.cshtml.cs - change the line with **`_urlEncoder.Encode("LINQ2DB_MVC_Core_5")`**.
  - **External Authentication** is easy to setup (documented in Startup.cs). These 3 integrations are coded already: -
 	 - Google Authentication
 	 - Microsoft Authentication

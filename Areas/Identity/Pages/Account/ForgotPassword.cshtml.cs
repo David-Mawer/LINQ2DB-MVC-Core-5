@@ -5,14 +5,14 @@ using System.Text.Encodings.Web;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using LINQ2DB_MVC_Core_3.Auth.DB;
+using LINQ2DB_MVC_Core_5.Auth.DB;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 
-namespace LINQ2DB_MVC_Core_3.Areas.Identity.Pages.Account
+namespace LINQ2DB_MVC_Core_5.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class ForgotPasswordModel : PageModel

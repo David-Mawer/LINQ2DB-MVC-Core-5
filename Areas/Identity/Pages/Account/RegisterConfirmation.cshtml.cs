@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using System.Text;
 using System.Threading.Tasks;
-using LINQ2DB_MVC_Core_3.Auth.DB;
+using LINQ2DB_MVC_Core_5.Auth.DB;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.AspNetCore.Identity;
 
-namespace LINQ2DB_MVC_Core_3.Areas.Identity.Pages.Account
+namespace LINQ2DB_MVC_Core_5.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class RegisterConfirmationModel : PageModel
@@ -28,7 +28,7 @@ namespace LINQ2DB_MVC_Core_3.Areas.Identity.Pages.Account
 
         public string EmailConfirmationUrl { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(string email)
+        public async Task<IActionResult> OnGetAsync(string email, string returnUrl = null)
         {
             if (email == null)
             {
@@ -52,7 +52,7 @@ namespace LINQ2DB_MVC_Core_3.Areas.Identity.Pages.Account
                 EmailConfirmationUrl = Url.Page(
                     "/Account/ConfirmEmail",
                     pageHandler: null,
-                    values: new { area = "Identity", userId = userId, code = code },
+                    values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                     protocol: Request.Scheme);
             }
 

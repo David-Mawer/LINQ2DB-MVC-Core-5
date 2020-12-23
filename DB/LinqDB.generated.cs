@@ -12,10 +12,10 @@ using System;
 using LinqToDB;
 using LinqToDB.Mapping;
 
-namespace LINQ2DB_MVC_Core_3.DB
+namespace LINQ2DB_MVC_Core_5.DB
 {
 	/// <summary>
-	/// Database       : aspnet-LINQ2DB_MVC_Core_3
+	/// Database       : aspnet-LINQ2DB_MVC_Core_5
 	/// Data Source    : (localdb)\mssqllocaldb
 	/// Server Version : 13.00.4001
 	/// </summary>

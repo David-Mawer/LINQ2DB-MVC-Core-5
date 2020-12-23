@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ2DB-MVC-Core-3", "LINQ2DB-MVC-Core-3.csproj", "{8F23BC65-E3F2-4595-8853-863A07C6C262}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ2DB-MVC-Core-5", "LINQ2DB-MVC-Core-5.csproj", "{8F23BC65-E3F2-4595-8853-863A07C6C262}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

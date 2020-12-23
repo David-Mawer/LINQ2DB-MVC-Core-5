@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
-using static LINQ2DB_MVC_Core_3.Extensions.Linq2Db;
+using static LINQ2DB_MVC_Core_5.Extensions.Linq2Db;
 
-namespace LINQ2DB_MVC_Core_3.Auth.DB
+namespace LINQ2DB_MVC_Core_5.Auth.DB
 {
     [Table("AspNetRoleClaims")]
     public partial class AspNetRoleClaims : IdentityRoleClaim<string>

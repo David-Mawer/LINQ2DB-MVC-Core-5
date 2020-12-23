@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace LINQ2DB_MVC_Core_3.Models
+namespace LINQ2DB_MVC_Core_5.Models
 {
     public class SSOConfigModel
     {

@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace LINQ2DB_MVC_Core_3.Extensions
+namespace LINQ2DB_MVC_Core_5.Extensions
 {
     public static class Linq2Db
 	{

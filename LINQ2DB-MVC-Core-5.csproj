@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-LINQ2DB_MVC_Core_3-4AA1F7CF-11F0-4CA7-8D4F-07C3D350BFD7</UserSecretsId>
-    <RootNamespace>LINQ2DB_MVC_Core_3</RootNamespace>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>aspnet-LINQ2DB_MVC_Core_5-4AA1F7CF-11F0-4CA7-8D4F-07C3D350BFD7</UserSecretsId>
+    <RootNamespace>LINQ2DB_MVC_Core_5</RootNamespace>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+    <AssemblyName>LINQ2DB-MVC-Core-5</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

@@ -4,13 +4,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using LINQ2DB_MVC_Core_3.Auth.DB;
-using LINQ2DB_MVC_Core_3.Auth;
+using LINQ2DB_MVC_Core_5.Auth.DB;
+using LINQ2DB_MVC_Core_5.Auth;
 using LinqToDB.Data;
-using LINQ2DB_MVC_Core_3.DB;
-using LINQ2DB_MVC_Core_3.Models;
+using LINQ2DB_MVC_Core_5.DB;
+using LINQ2DB_MVC_Core_5.Models;
 
-namespace LINQ2DB_MVC_Core_3
+namespace LINQ2DB_MVC_Core_5
 {
     public class Startup
     {

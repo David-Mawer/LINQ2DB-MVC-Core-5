@@ -1,6 +1,6 @@
 ﻿using LinqToDB.Configuration;
 
-namespace LINQ2DB_MVC_Core_3.DB
+namespace LINQ2DB_MVC_Core_5.DB
 {
     public class ConnectionStringSettings : IConnectionStringSettings
     {

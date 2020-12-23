@@ -5,14 +5,14 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Linq;
 using System.Threading.Tasks;
-using LINQ2DB_MVC_Core_3.Auth.DB;
+using LINQ2DB_MVC_Core_5.Auth.DB;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 
-namespace LINQ2DB_MVC_Core_3.Areas.Identity.Pages.Account.Manage
+namespace LINQ2DB_MVC_Core_5.Areas.Identity.Pages.Account.Manage
 {
     public partial class EmailModel : PageModel
     {
@@ -94,6 +94,7 @@ namespace LINQ2DB_MVC_Core_3.Areas.Identity.Pages.Account.Manage
             {
                 var userId = await _userManager.GetUserIdAsync(user);
                 var code = await _userManager.GenerateChangeEmailTokenAsync(user, Input.NewEmail);
+                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                 var callbackUrl = Url.Page(
                     "/Account/ConfirmEmailChange",
                     pageHandler: null,

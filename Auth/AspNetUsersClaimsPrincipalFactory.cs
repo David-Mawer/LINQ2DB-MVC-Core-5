@@ -2,13 +2,13 @@
 using LinqToDB.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
-using LINQ2DB_MVC_Core_3.Auth.DB;
+using LINQ2DB_MVC_Core_5.Auth.DB;
 using System;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace LINQ2DB_MVC_Core_3.Auth
+namespace LINQ2DB_MVC_Core_5.Auth
 {
     public class AspNetUsersClaimsPrincipalFactory : UserClaimsPrincipalFactory<AspNetUsers>, IDisposable
     {

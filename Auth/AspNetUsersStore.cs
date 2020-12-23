@@ -1,8 +1,8 @@
 ﻿using LinqToDB;
 using LinqToDB.Data;
 using Microsoft.AspNetCore.Identity;
-using LINQ2DB_MVC_Core_3.Auth.DB;
-using LINQ2DB_MVC_Core_3.Extensions;
+using LINQ2DB_MVC_Core_5.Auth.DB;
+using LINQ2DB_MVC_Core_5.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace LINQ2DB_MVC_Core_3.Auth
+namespace LINQ2DB_MVC_Core_5.Auth
 {
 
     public class AspNetUsersStore : IUserStore<AspNetUsers>

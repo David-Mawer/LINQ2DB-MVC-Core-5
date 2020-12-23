@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace LINQ2DB_MVC_Core_3
+namespace LINQ2DB_MVC_Core_5
 {
     public class Program
     {

@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LINQ2DB_MVC_Core_3.DB
+namespace LINQ2DB_MVC_Core_5.DB
 {
     public class Linq2dbSettings : ILinqToDBSettings
     {

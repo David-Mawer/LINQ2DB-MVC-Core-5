@@ -1,12 +1,12 @@
 ﻿using LinqToDB;
 using LinqToDB.Data;
 using Microsoft.AspNetCore.Identity;
-using LINQ2DB_MVC_Core_3.Auth.DB;
+using LINQ2DB_MVC_Core_5.Auth.DB;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace LINQ2DB_MVC_Core_3.Auth
+namespace LINQ2DB_MVC_Core_5.Auth
 {
     public class AspNetRolesStore : IRoleStore<AspNetRoles>
     {

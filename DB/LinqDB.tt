@@ -51,7 +51,7 @@
 		Custom tool must be set to TextTemplatingFileGenerator, not TextTemplatingFilePreprocessor or any other value.
 	*/
 
-	NamespaceName = "LINQ2DB_MVC_Core_3.DB";
+	NamespaceName = "LINQ2DB_MVC_Core_5.DB";
 
 	/* Data context configuration */
     // (string) Name of base class for generated data context class.
@@ -215,7 +215,7 @@
 
 	// to configure GetSchemaOptions properties, add them here, before load metadata call
 
-	string connectionString = "Server=(localdb)\\mssqllocaldb;Database=aspnet-LINQ2DB_MVC_Core_3;Trusted_Connection=True;MultipleActiveResultSets=true";
+	string connectionString = "Server=(localdb)\\mssqllocaldb;Database=aspnet-LINQ2DB_MVC_Core_5;Trusted_Connection=True;MultipleActiveResultSets=true";
 //	LoadSqlServerMetadata("MyServer", "MyDatabase", "User", "Password");
 //	LoadSqlServerMetadata(".", "MyDatabase"); // Integrated Security
 	LoadSqlServerMetadata(connectionString);

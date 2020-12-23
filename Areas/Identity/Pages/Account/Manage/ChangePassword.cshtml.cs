@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using LINQ2DB_MVC_Core_3.Auth.DB;
+using LINQ2DB_MVC_Core_5.Auth.DB;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-namespace LINQ2DB_MVC_Core_3.Areas.Identity.Pages.Account.Manage
+namespace LINQ2DB_MVC_Core_5.Areas.Identity.Pages.Account.Manage
 {
     public class ChangePasswordModel : PageModel
     {
