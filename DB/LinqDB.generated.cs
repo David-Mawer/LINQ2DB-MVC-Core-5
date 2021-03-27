@@ -10,6 +10,7 @@
 using System;
 
 using LinqToDB;
+using LinqToDB.Configuration;
 using LinqToDB.Mapping;
 
 namespace LINQ2DB_MVC_Core_5.DB
@@ -29,6 +30,13 @@ namespace LINQ2DB_MVC_Core_5.DB
 
 		public LinqDB(string configuration)
 			: base(configuration)
+		{
+			InitDataContext();
+			InitMappingSchema();
+		}
+
+		public LinqDB(LinqToDbConnectionOptions options)
+			: base(options)
 		{
 			InitDataContext();
 			InitMappingSchema();

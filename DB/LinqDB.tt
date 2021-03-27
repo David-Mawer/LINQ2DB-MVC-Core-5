@@ -1,7 +1,7 @@
 ﻿<#@ template language="C#" debug="True" hostSpecific="True"                           #>
 <#@ output extension=".generated.cs"                                                  #>
-<#@ include file="$(LinqToDBT4SqlServerTemplatesDirectory)LinqToDB.SqlServer.Tools.ttinclude" #>
-<#@ include file="$(LinqToDBT4SqlServerTemplatesDirectory)PluralizationService.ttinclude"     #>
+<#@ include file="$(LinqToDBT4SqlServerTemplatesPath)LinqToDB.SqlServer.Tools.ttinclude" #>
+<#@ include file="$(LinqToDBT4SqlServerTemplatesPath)PluralizationService.ttinclude"     #>
 <# //@ include file="$(ProjectDir)LinqToDB.Templates\LinqToDB.SqlServer.Tools.ttinclude" #>
 <# //@ include file="$(ProjectDir)LinqToDB.Templates\PluralizationService.ttinclude"     #>
 <#
@@ -127,9 +127,9 @@
     GenerateBackReferences        = true;
     // Enables generation of associations as extension methods for related table mapping classes
     GenerateAssociationExtensions = false;
-    // Defines method to generate name for "one" side of association
-    Func<ForeignKey, string> GetAssociationExtensionSinglularName
-        = GetAssociationExtensionSinglularNameDefault;
+//    // Defines method to generate name for "one" side of association
+//    Func<ForeignKey, string> GetAssociationExtensionSinglularName
+//        = GetAssociationExtensionSinglularNameDefault;
     // Defines method to generate name for "many" side of association
     Func<ForeignKey, string> GetAssociationExtensionPluralName
         = GetAssociationExtensionPluralNameDefault;
