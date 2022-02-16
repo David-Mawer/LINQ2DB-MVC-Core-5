@@ -42,6 +42,13 @@ namespace LINQ2DB_MVC_Core_5.DB
 			InitMappingSchema();
 		}
 
+		public LinqDB(LinqToDbConnectionOptions<LinqDB> options)
+			: base(options)
+		{
+			InitDataContext();
+			InitMappingSchema();
+		}
+
 		partial void InitDataContext  ();
 		partial void InitMappingSchema();
 	}
