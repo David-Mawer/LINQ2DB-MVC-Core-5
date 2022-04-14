@@ -5,7 +5,7 @@
 // </auto-generated>
 //---------------------------------------------------------------------------------------------------
 
-#pragma warning disable 1591
+#pragma warning disable 1572, 1591
 
 using System;
 
@@ -53,5 +53,3 @@ namespace LINQ2DB_MVC_Core_5.DB
 		partial void InitMappingSchema();
 	}
 }
-
-#pragma warning restore 1591
