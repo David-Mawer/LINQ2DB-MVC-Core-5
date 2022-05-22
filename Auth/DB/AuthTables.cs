@@ -19,7 +19,7 @@ namespace LINQ2DB_MVC_Core_5.Auth.DB
         /// <summary>
         /// FK_AspNetRoleClaims_AspNetRoles_RoleId
         /// </summary>
-        [Association(ThisKey = "RoleId", OtherKey = "Id", CanBeNull = false, Relationship = Relationship.ManyToOne, KeyName = "FK_AspNetRoleClaims_AspNetRoles_RoleId", BackReferenceName = "AspNetRoleClaimsRoleIds")]
+        [Association(ThisKey = "RoleId", OtherKey = "Id", CanBeNull = false)]
         public AspNetRoles Role { get; set; }
 
         #endregion
@@ -43,13 +43,13 @@ namespace LINQ2DB_MVC_Core_5.Auth.DB
         /// <summary>
         /// FK_AspNetRoleClaims_AspNetRoles_RoleId_BackReference
         /// </summary>
-        [Association(ThisKey = "Id", OtherKey = "RoleId", CanBeNull = true, Relationship = Relationship.OneToMany, IsBackReference = true)]
+        [Association(ThisKey = "Id", OtherKey = "RoleId", CanBeNull = true)]
         public IEnumerable<AspNetRoleClaims> AspNetRoleClaimsRoleIds { get; set; }
 
         /// <summary>
         /// FK_AspNetUserRoles_AspNetRoles_RoleId_BackReference
         /// </summary>
-        [Association(ThisKey = "Id", OtherKey = "RoleId", CanBeNull = true, Relationship = Relationship.OneToMany, IsBackReference = true)]
+        [Association(ThisKey = "Id", OtherKey = "RoleId", CanBeNull = true)]
         public IEnumerable<AspNetUserRoles> AspNetUserRolesRoleIds { get; set; }
 
         #endregion
@@ -68,7 +68,7 @@ namespace LINQ2DB_MVC_Core_5.Auth.DB
         /// <summary>
         /// FK_AspNetUserClaims_AspNetUsers_UserId
         /// </summary>
-        [Association(ThisKey = "UserId", OtherKey = "Id", CanBeNull = false, Relationship = Relationship.ManyToOne, KeyName = "FK_AspNetUserClaims_AspNetUsers_UserId", BackReferenceName = "AspNetUserClaimsUserIds")]
+        [Association(ThisKey = "UserId", OtherKey = "Id", CanBeNull = false)]
         public AspNetUsers User { get; set; }
 
         #endregion
@@ -87,7 +87,7 @@ namespace LINQ2DB_MVC_Core_5.Auth.DB
         /// <summary>
         /// FK_AspNetUserLogins_AspNetUsers_UserId
         /// </summary>
-        [Association(ThisKey = "UserId", OtherKey = "Id", CanBeNull = false, Relationship = Relationship.ManyToOne, KeyName = "FK_AspNetUserLogins_AspNetUsers_UserId", BackReferenceName = "AspNetUserLoginsUserIds")]
+        [Association(ThisKey = "UserId", OtherKey = "Id", CanBeNull = false)]
         public AspNetUsers User { get; set; }
 
         #endregion
@@ -104,13 +104,13 @@ namespace LINQ2DB_MVC_Core_5.Auth.DB
         /// <summary>
         /// FK_AspNetUserRoles_AspNetRoles_RoleId
         /// </summary>
-        [Association(ThisKey = "RoleId", OtherKey = "Id", CanBeNull = false, Relationship = Relationship.ManyToOne, KeyName = "FK_AspNetUserRoles_AspNetRoles_RoleId", BackReferenceName = "AspNetUserRolesRoleIds")]
+        [Association(ThisKey = "RoleId", OtherKey = "Id", CanBeNull = false)]
         public AspNetRoles Role { get; set; }
 
         /// <summary>
         /// FK_AspNetUserRoles_AspNetUsers_UserId
         /// </summary>
-        [Association(ThisKey = "UserId", OtherKey = "Id", CanBeNull = false, Relationship = Relationship.ManyToOne, KeyName = "FK_AspNetUserRoles_AspNetUsers_UserId", BackReferenceName = "AspNetUserRolesUserIds")]
+        [Association(ThisKey = "UserId", OtherKey = "Id", CanBeNull = false)]
         public AspNetUsers User { get; set; }
 
         #endregion
@@ -141,25 +141,25 @@ namespace LINQ2DB_MVC_Core_5.Auth.DB
         /// <summary>
         /// FK_AspNetUserClaims_AspNetUsers_UserId_BackReference
         /// </summary>
-        [Association(ThisKey = "Id", OtherKey = "UserId", CanBeNull = true, Relationship = Relationship.OneToMany, IsBackReference = true)]
+        [Association(ThisKey = "Id", OtherKey = "UserId", CanBeNull = true)]
         public IEnumerable<AspNetUserClaims> AspNetUserClaimsUserIds { get; set; }
 
         /// <summary>
         /// FK_AspNetUserLogins_AspNetUsers_UserId_BackReference
         /// </summary>
-        [Association(ThisKey = "Id", OtherKey = "UserId", CanBeNull = true, Relationship = Relationship.OneToMany, IsBackReference = true)]
+        [Association(ThisKey = "Id", OtherKey = "UserId", CanBeNull = true)]
         public IEnumerable<AspNetUserLogins> AspNetUserLoginsUserIds { get; set; }
 
         /// <summary>
         /// FK_AspNetUserRoles_AspNetUsers_UserId_BackReference
         /// </summary>
-        [Association(ThisKey = "Id", OtherKey = "UserId", CanBeNull = true, Relationship = Relationship.OneToMany, IsBackReference = true)]
+        [Association(ThisKey = "Id", OtherKey = "UserId", CanBeNull = true)]
         public IEnumerable<AspNetUserRoles> AspNetUserRolesUserIds { get; set; }
 
         /// <summary>
         /// FK_AspNetUserTokens_AspNetUsers_UserId_BackReference
         /// </summary>
-        [Association(ThisKey = "Id", OtherKey = "UserId", CanBeNull = true, Relationship = Relationship.OneToMany, IsBackReference = true)]
+        [Association(ThisKey = "Id", OtherKey = "UserId", CanBeNull = true)]
         public IEnumerable<AspNetUserTokens> AspNetUserTokensUserIds { get; set; }
 
         #endregion

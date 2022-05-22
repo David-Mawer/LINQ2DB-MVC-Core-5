@@ -5,7 +5,7 @@
 // </auto-generated>
 //---------------------------------------------------------------------------------------------------
 
-#pragma warning disable 1572, 1591
+#pragma warning disable 1573, 1591
 
 using System;
 
@@ -35,14 +35,14 @@ namespace LINQ2DB_MVC_Core_5.DB
 			InitMappingSchema();
 		}
 
-		public LinqDB(LinqToDbConnectionOptions options)
+		public LinqDB(LinqToDBConnectionOptions options)
 			: base(options)
 		{
 			InitDataContext();
 			InitMappingSchema();
 		}
 
-		public LinqDB(LinqToDbConnectionOptions<LinqDB> options)
+		public LinqDB(LinqToDBConnectionOptions<LinqDB> options)
 			: base(options)
 		{
 			InitDataContext();

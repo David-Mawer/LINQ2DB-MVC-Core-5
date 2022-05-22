@@ -15,12 +15,11 @@
 
 		2. Modify the connection settings below to connect to your database.
 
-		3. Add connection string to the web/app.config file:
+		3. Add connection string to theappsettings.json file:
 
-			<connectionStrings>
-				<add name="MyDatabase" providerName="System.Data.SqlClient"
-					connectionString="Data Source=.;Database=MyDatabase;User Id=User;Password=TestPassword;" />
-			</connectionStrings>
+			"ConnectionStrings": {
+              "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=aspnet-LINQ2DB_MVC_Core_5;Trusted_Connection=True;MultipleActiveResultSets=true"
+            }
 
 		4. To access your database use the following code:
 
