@@ -1,6 +1,6 @@
-# This is a .Net Core 6.0 Template for Linq2Db
+# This is a .Net 6.0 Template for Linq2Db
 
-This is the basic MVC template for **.Net Core 6.0** with a few tweaks: -
+This is the basic MVC template for **.Net 6.0** with a few tweaks: -
 
  - The ORM tool is **Linq2DB**
  - The Identity UI is **fully scaffolded**.
