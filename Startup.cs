@@ -24,8 +24,13 @@ namespace LINQ2DB_MVC_Core_5
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Set up Linq2DB connection
-            DataConnection.DefaultSettings = new Linq2dbSettings(Configuration);
+            // Allow a test project to specify the default settings.
+            //  this is done by not over-writing the settings if they exist already.
+            if (DataConnection.DefaultSettings == null)
+            {
+                // Set up Linq2DB connection from the appsettings.json file.
+                DataConnection.DefaultSettings = new Linq2dbSettings(Configuration);
+            }
 
             // configure app to use Linq2DB for the identity provider: BEGIN
             services.AddScoped<IUserStore<AspNetUsers>, AspNetUsersStore>();

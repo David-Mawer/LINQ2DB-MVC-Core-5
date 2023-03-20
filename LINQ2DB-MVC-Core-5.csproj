@@ -9,9 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="linq2db" Version="4.2.0" />
-    <PackageReference Include="linq2db.SqlServer" Version="4.2.0" />
-    <PackageReference Include="linq2db.t4models" Version="4.2.0" />
+    <PackageReference Include="linq2db" Version="5.1.0" />
+    <PackageReference Include="linq2db.SqlServer" Version="5.1.0" />
+    <PackageReference Include="linq2db.t4models" Version="5.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="6.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="6.0.8" />
@@ -22,22 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="DB\LinqDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>LinqDB.generated.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="DB\LinqDB.generated.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>LinqDB.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>

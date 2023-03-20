@@ -1,0 +1,36 @@
+{
+  "general": {
+    "provider": "SQLServer",
+    "connection": "Server=(localdb)\\mssqllocaldb;Database=aspnet-LINQ2DB_MVC_Core_5;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "overwrite": true
+  },
+  "code": {
+    "single-file": true,
+    "namespace": "LINQ2DB_MVC_Core_5.DB"
+  },
+  "dataModel": {
+    "add-associations": true,
+    "context-name": "LinqDB",
+    "find-methods": [],
+    "data-context-class-name": {
+      "case": "none",
+      "pluralization": "none",
+      "transformation": "none"
+    },
+    "entity-class-name": {
+      "case": "none",
+      "pluralization": "none",
+      "transformation": "none"
+    },
+    "entity-column-property-name": {
+      "case": "none",
+      "pluralization": "none",
+      "transformation": "none"
+    },
+    "entity-context-property-name": {
+      "case": "none",
+      "pluralization": "none",
+      "transformation": "none"
+    }
+  }
+}
