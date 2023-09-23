@@ -9,16 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="linq2db" Version="5.1.1" />
-    <PackageReference Include="linq2db.SqlServer" Version="5.1.1" />
-    <PackageReference Include="linq2db.t4models" Version="5.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="7.0.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="7.0.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.4" />
+    <PackageReference Include="linq2db" Version="5.2.2" />
+    <PackageReference Include="linq2db.SqlServer" Version="5.2.2" />
+    <PackageReference Include="linq2db.t4models" Version="5.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.11" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.10" />
   </ItemGroup>
 
   <ItemGroup>
