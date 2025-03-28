@@ -1,4 +1,4 @@
-# This is a .Net 7.0 Template for Linq2Db
+# This is a .Net 7.0 Template for Linq2Db (currently running on .net 9.0)
 
 This is the basic MVC template for **.Net 7.0** with a few tweaks: -
 
