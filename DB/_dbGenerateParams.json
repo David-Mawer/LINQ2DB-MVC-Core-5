@@ -1,7 +1,7 @@
 {
   "general": {
     "provider": "SQLServer",
-    "connection": "Server=(localdb)\\mssqllocaldb;Database=aspnet-LINQ2DB_MVC_Core_5;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "connection": "Server=(localdb)\\mssqllocaldb;Database=aspnet-LINQ2DB_MVC_Core_10;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true",
     "overwrite": true
   },
   "code": {

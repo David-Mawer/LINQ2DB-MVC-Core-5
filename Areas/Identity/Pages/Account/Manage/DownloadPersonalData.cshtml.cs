@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LINQ2DB_MVC_Core_5.Auth.DB;
+﻿using LINQ2DB_MVC_Core_5.Auth.DB;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json;
-using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
 
 namespace LINQ2DB_MVC_Core_5.Areas.Identity.Pages.Account.Manage
 {

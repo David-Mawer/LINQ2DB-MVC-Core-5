@@ -1,7 +1,8 @@
-﻿using LinqToDB;
+﻿using LINQ2DB_MVC_Core_5.Auth.DB;
+using LinqToDB;
+using LinqToDB.Async;
 using LinqToDB.Data;
 using Microsoft.AspNetCore.Identity;
-using LINQ2DB_MVC_Core_5.Auth.DB;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
